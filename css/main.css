@@ -1,0 +1,144 @@
+body {
+	color: #7d7b7b;
+}
+
+.main-content {
+	padding-top: 150px;
+}
+
+.modalupload {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+.btn-upload-background {
+	background-color: #ffb700;
+    border: 0;
+    margin: 100px 205px;
+    color: white;
+}
+
+#uploadModal {
+	display: block;
+}
+
+.control-panel{
+	display: inline-block;
+	width: 49%;
+}
+.button {
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+.btn-default {
+    background-color: #fb6a00 !important;
+    border-color: #fb6a00 !important;
+    color: white;
+}
+
+.btn-default:hover {
+    background-color: #fff !important;
+    border-color: #fb6a00 !important;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.button-upload {
+    background-color: #fd9964; 
+    width: 45%;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    margin-left: 20%;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.image-container {
+	position: relative;
+	box-shadow: 1px 1px 6px 1px #888888;
+}
+
+.btn-block {
+    display: block;
+    width: 60% !important;
+}
+
+.add-button {
+	padding-bottom: 50px;
+	border-bottom: solid 1px #d4cdcd;
+}
+
+.size-design {
+	text-align: center;
+	font-size: 16px;
+}
+.size-design .size-header-font {
+	font-weight: bold;
+}
+
+.size-design-header {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.print-position {
+	text-align: center;
+	font-size: 16px;
+}
+.print-position .size-header-font {
+	font-weight: bold;
+}
+.position-design-header {
+	padding-top: 50px;
+	padding-bottom: 30px;	
+}
+
+.control-panel input {
+    width: 15%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+span.value {
+    margin-right: 9%;
+    margin-left: 9%;
+}
+
+.price {
+	margin-left: 3%;
+}
+
+.price-head {
+	margin-right: 3%;
+}

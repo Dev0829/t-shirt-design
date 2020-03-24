@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T-Shirt Designer</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="main-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					<div class="image-container">
+						<div class="canvas-img">
+							<canvas id="canvas" width="555" height="555" ></canvas>
+						</div>
+					</div>
+				</div>
+				<div class="control-panel col-sm-6 col-xs-12">
+					<div class="add-button row d-flex justify-content-center">
+						<label class="btn btn-default btn-file btn-lg btn-block button-upload">
+						    Add Design <input type="file" id="image" hidden>
+						</label>	
+					</div>
+					<div class="size-design">
+						<div class="size-design-header">
+							<span class="justify-content-center">
+								PRINT
+							</span>
+							<span class="justify-content-center size-header-font">SIZE</span>	
+						</div>
+						<div class="size-design-content">
+							<div class="size-design-value">
+								<span class="value">width</span>
+								<label>x</label>
+								<span class="value">Height</span>
+							</div>
+							<div>
+								<input type="text" name="width" class="size_design_width" onChange="updateCanvasImage()">
+								<input type="text" name="height" class="size_design_height" onChange="updateCanvasImage()">
+							</div>
+						</div>
+					</div>
+					<div class="print-position">
+						<div class="position-design-header">
+							<span class="justify-content-center">
+								PRINT
+							</span>
+							<span class="justify-content-center size-header-font">POSITION</span>	
+						</div>
+						<div class="size-design-content">
+							<div class="size-design-value">
+								<span class="value">X</span>
+								<span class="value">Y</span>
+							</div>
+							<div>
+								<input type="text" name="width" class="design_x_position" onChange="updateCanvasImage()">
+								<input type="text" name="height" class="design_y_position" onChange="updateCanvasImage()">
+							</div>
+						</div>
+					</div>
+					<div class="print-position">
+						<div class="position-design-header">
+							<span class="justify-content-center price-head">
+								PRODUCT PRICE : Rs.
+							</span>
+							<span class="justify-content-center size-header-font price">236.25</span>	
+						</div>
+						<div class="size-design-content">
+							<div>
+								<label class="btn btn-default button-upload cancel">Cancel</label>
+								<a href="#" id="save" class="btn btn-default button-upload save">Save</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="UploadModal" class="modal fade" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+		      	<div class="modal-header">
+			        <label class="btn btn-upload-background">
+					    Upload Background Image <input type="file" id="upload-background" hidden>
+					</label>
+    			</div>
+		  	</div>
+		 </div>
+	</div>
+</body>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fabric.min.js"></script>
+<script src="js/main.js"></script>
+</html>
